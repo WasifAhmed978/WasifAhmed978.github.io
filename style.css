@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+}
+
+#add-spot, #dashboard {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="file"], input[type="text"], input[type="number"], textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#spots-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.spot-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.spot-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.spot-card h3, .spot-card p {
+    margin: 5px 0;
+}
+
+#spot-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#spot-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+#spot-modal img {
+    max-width: 100%;
+    height: auto;
+}
+
+#close-modal {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    cursor: pointer;
+    color: #333;
+}

@@ -1,9 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate This Spot</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  Hello World
+    <header>
+        <h1>Rate This Spot</h1>
+    </header>
+    <main>
+        <section id="add-spot">
+            <h2>Add a New Spot</h2>
+            <form id="spot-form">
+                <label for="spot-image">Image:</label>
+                <input type="file" id="spot-image" accept="image/*" required>
+                <label for="spot-name">Name:</label>
+                <input type="text" id="spot-name" required>
+                <label for="spot-rating">Rating:</label>
+                <input type="number" id="spot-rating" min="1" max="5" required>
+                <label for="spot-review">Review:</label>
+                <textarea id="spot-review" required></textarea>
+                <button type="submit">Save Spot</button>
+            </form>
+        </section>
+        <section id="dashboard">
+            <h2>Saved Spots</h2>
+            <div id="spots-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
-
 </html>
